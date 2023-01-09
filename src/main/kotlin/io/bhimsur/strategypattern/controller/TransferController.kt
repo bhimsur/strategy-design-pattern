@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping(value = ["/api/transfer"], produces = [MediaType.TEXT_PLAIN_VALUE])
-class TransferController(val transferService: TransferService) {
+class TransferController(private val transferService: TransferService) {
     @PostMapping(value = ["inquiry"], consumes = [MediaType.APPLICATION_JSON_VALUE])
     fun inquiry(@RequestBody request: InquiryTransferRequest): String {
         return transferService.inquiry(request)

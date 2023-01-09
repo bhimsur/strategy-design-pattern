@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.bhimsur</groupId>
     <artifactId>strategy-pattern</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>strategy-pattern</name>
     <description>strategy-pattern</description>
     <properties>
